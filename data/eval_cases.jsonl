@@ -1,0 +1,600 @@
+{"id": "supported-92", "query": "RAG retrieves relevant context first and then generates an answer.", "expected": "supported"}
+{"id": "unsupported-75", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "supported-41", "query": "Hybrid retrieval uses FAISS for dense retrieval and BM25 for sparse retrieval.", "expected": "supported"}
+{"id": "supported-263", "query": "BM25 is a sparse retrieval method for keyword-based ranking.", "expected": "supported"}
+{"id": "supported-80", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "unsupported-278", "query": "BM25 is a dense retrieval method using vectors.", "expected": "unsupported"}
+{"id": "supported-97", "query": "BM25 is a sparse retrieval method for keyword-based ranking.", "expected": "supported"}
+{"id": "unsupported-133", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "supported-279", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "supported-156", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "supported-9", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "supported-283", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "unsupported-7", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "unsupported-51", "query": "FAISS is a sparse keyword scorer.", "expected": "unsupported"}
+{"id": "unsupported-91", "query": "Dense retrieval relies on keywords and BM25.", "expected": "unsupported"}
+{"id": "supported-265", "query": "BM25 does not store dense embeddings.", "expected": "supported"}
+{"id": "supported-154", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "unsupported-286", "query": "FAISS is a sparse keyword scorer.", "expected": "unsupported"}
+{"id": "unsupported-191", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "supported-51", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "unsupported-195", "query": "FAISS is a sparse keyword scorer.", "expected": "unsupported"}
+{"id": "unsupported-156", "query": "A verifier labels claims as supported when evidence is missing.", "expected": "unsupported"}
+{"id": "unsupported-213", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "unsupported-285", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "supported-210", "query": "The diagram shows query -> retrieve (BM25 + FAISS) -> generate -> verify with citations.", "expected": "supported"}
+{"id": "supported-145", "query": "BM25 does not store dense embeddings.", "expected": "supported"}
+{"id": "unsupported-245", "query": "Hybrid retrieval ignores BM25.", "expected": "unsupported"}
+{"id": "supported-271", "query": "A verifier labels claims as supported when evidence directly backs them.", "expected": "supported"}
+{"id": "supported-217", "query": "The diagram shows query -> retrieve (BM25 + FAISS) -> generate -> verify with citations.", "expected": "supported"}
+{"id": "supported-161", "query": "BM25 is the classic keyword ranking method.", "expected": "supported"}
+{"id": "supported-165", "query": "FAISS is not a keyword ranking algorithm.", "expected": "supported"}
+{"id": "unsupported-61", "query": "Dense retrieval relies on keywords and BM25.", "expected": "unsupported"}
+{"id": "unsupported-124", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "supported-257", "query": "RAG answers are grounded in retrieved context, often with citations.", "expected": "supported"}
+{"id": "unsupported-103", "query": "BM25 is a dense retrieval method using vectors.", "expected": "unsupported"}
+{"id": "supported-284", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "supported-74", "query": "The diagram shows query -> retrieve (BM25 + FAISS) -> generate -> verify with citations.", "expected": "supported"}
+{"id": "unsupported-288", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "unsupported-295", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "supported-68", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "unsupported-292", "query": "FAISS is a sparse keyword scorer.", "expected": "unsupported"}
+{"id": "unsupported-228", "query": "FAISS stores lexical term statistics for documents.", "expected": "unsupported"}
+{"id": "unsupported-2", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "unsupported-151", "query": "A verifier labels claims as supported when evidence is missing.", "expected": "unsupported"}
+{"id": "supported-96", "query": "FAISS is not a keyword ranking algorithm.", "expected": "supported"}
+{"id": "supported-118", "query": "The diagram shows query -> retrieve (BM25 + FAISS) -> generate -> verify with citations.", "expected": "supported"}
+{"id": "supported-169", "query": "BM25 does not store dense embeddings.", "expected": "supported"}
+{"id": "unsupported-32", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "supported-148", "query": "The diagram shows query -> retrieve (BM25 + FAISS) -> generate -> verify with citations.", "expected": "supported"}
+{"id": "supported-18", "query": "FAISS supports similarity search over dense vectors.", "expected": "supported"}
+{"id": "unsupported-289", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "supported-270", "query": "RAG answers are grounded in retrieved context, often with citations.", "expected": "supported"}
+{"id": "supported-108", "query": "A verifier labels claims as supported when evidence directly backs them.", "expected": "supported"}
+{"id": "supported-192", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "unsupported-34", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "unsupported-232", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "supported-54", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "supported-44", "query": "BM25 is the classic keyword ranking method.", "expected": "supported"}
+{"id": "supported-101", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "unsupported-271", "query": "FAISS is a sparse keyword scorer.", "expected": "unsupported"}
+{"id": "unsupported-248", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "supported-214", "query": "Hybrid retrieval uses FAISS for dense retrieval and BM25 for sparse retrieval.", "expected": "supported"}
+{"id": "supported-256", "query": "BM25 does not store dense embeddings.", "expected": "supported"}
+{"id": "unsupported-33", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "supported-187", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "supported-6", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "supported-120", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "unsupported-46", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "unsupported-71", "query": "Hybrid retrieval ignores BM25.", "expected": "unsupported"}
+{"id": "supported-152", "query": "RAG retrieves relevant context first and then generates an answer.", "expected": "supported"}
+{"id": "supported-176", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "supported-52", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "unsupported-173", "query": "FAISS is a sparse keyword scorer.", "expected": "unsupported"}
+{"id": "unsupported-277", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "supported-129", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "supported-288", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "supported-298", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "unsupported-200", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "unsupported-63", "query": "BM25 is a dense retrieval method using vectors.", "expected": "unsupported"}
+{"id": "unsupported-226", "query": "A verifier labels claims as supported when evidence is missing.", "expected": "unsupported"}
+{"id": "supported-206", "query": "BM25 is a sparse retrieval method for keyword-based ranking.", "expected": "supported"}
+{"id": "supported-8", "query": "BM25 is a sparse retrieval method for keyword-based ranking.", "expected": "supported"}
+{"id": "supported-99", "query": "FAISS is not a keyword ranking algorithm.", "expected": "supported"}
+{"id": "supported-146", "query": "BM25 is the classic keyword ranking method.", "expected": "supported"}
+{"id": "supported-35", "query": "A verifier labels claims as supported when evidence directly backs them.", "expected": "supported"}
+{"id": "supported-20", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "supported-83", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "unsupported-266", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "supported-201", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "supported-258", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "supported-253", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "unsupported-155", "query": "A verifier labels claims as supported when evidence is missing.", "expected": "unsupported"}
+{"id": "supported-158", "query": "RAG retrieves relevant context first and then generates an answer.", "expected": "supported"}
+{"id": "unsupported-164", "query": "FAISS is a sparse keyword scorer.", "expected": "unsupported"}
+{"id": "unsupported-168", "query": "RAG generates answers before retrieving context.", "expected": "unsupported"}
+{"id": "unsupported-184", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "supported-235", "query": "The diagram shows query -> retrieve (BM25 + FAISS) -> generate -> verify with citations.", "expected": "supported"}
+{"id": "unsupported-223", "query": "RAG generates answers before retrieving context.", "expected": "unsupported"}
+{"id": "supported-225", "query": "A verifier labels claims as supported when evidence directly backs them.", "expected": "supported"}
+{"id": "unsupported-146", "query": "A verifier labels claims as supported when evidence is missing.", "expected": "unsupported"}
+{"id": "supported-90", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "unsupported-137", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "supported-299", "query": "A verifier labels claims as supported when evidence directly backs them.", "expected": "supported"}
+{"id": "supported-37", "query": "Hybrid retrieval uses FAISS for dense retrieval and BM25 for sparse retrieval.", "expected": "supported"}
+{"id": "supported-150", "query": "BM25 does not store dense embeddings.", "expected": "supported"}
+{"id": "supported-275", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "unsupported-204", "query": "RAG does not use citations.", "expected": "unsupported"}
+{"id": "supported-61", "query": "FAISS supports similarity search over dense vectors.", "expected": "supported"}
+{"id": "unsupported-11", "query": "FAISS is a sparse keyword scorer.", "expected": "unsupported"}
+{"id": "unsupported-97", "query": "Dense retrieval relies on keywords and BM25.", "expected": "unsupported"}
+{"id": "unsupported-150", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "unsupported-1", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "unsupported-225", "query": "BM25 is a dense retrieval method using vectors.", "expected": "unsupported"}
+{"id": "unsupported-105", "query": "FAISS stores lexical term statistics for documents.", "expected": "unsupported"}
+{"id": "unsupported-31", "query": "Dense retrieval relies on keywords and BM25.", "expected": "unsupported"}
+{"id": "unsupported-78", "query": "Hybrid retrieval ignores BM25.", "expected": "unsupported"}
+{"id": "supported-23", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "unsupported-249", "query": "FAISS is a sparse keyword scorer.", "expected": "unsupported"}
+{"id": "unsupported-209", "query": "Hybrid retrieval ignores BM25.", "expected": "unsupported"}
+{"id": "unsupported-205", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "unsupported-167", "query": "Dense retrieval relies on keywords and BM25.", "expected": "unsupported"}
+{"id": "supported-34", "query": "BM25 does not store dense embeddings.", "expected": "supported"}
+{"id": "supported-28", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "supported-194", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "supported-162", "query": "The diagram shows query -> retrieve (BM25 + FAISS) -> generate -> verify with citations.", "expected": "supported"}
+{"id": "unsupported-244", "query": "Dense retrieval relies on keywords and BM25.", "expected": "unsupported"}
+{"id": "supported-212", "query": "RAG retrieves relevant context first and then generates an answer.", "expected": "supported"}
+{"id": "supported-269", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "unsupported-24", "query": "A verifier labels claims as supported when evidence is missing.", "expected": "unsupported"}
+{"id": "unsupported-67", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "unsupported-100", "query": "RAG does not use citations.", "expected": "unsupported"}
+{"id": "supported-77", "query": "A verifier labels claims as supported when evidence directly backs them.", "expected": "supported"}
+{"id": "supported-114", "query": "BM25 is a sparse retrieval method for keyword-based ranking.", "expected": "supported"}
+{"id": "unsupported-199", "query": "Hybrid retrieval ignores BM25.", "expected": "unsupported"}
+{"id": "supported-98", "query": "FAISS is not a keyword ranking algorithm.", "expected": "supported"}
+{"id": "unsupported-44", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "supported-58", "query": "A verifier labels claims as supported when evidence directly backs them.", "expected": "supported"}
+{"id": "supported-107", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "unsupported-88", "query": "Sparse retrieval uses dense vector similarity.", "expected": "unsupported"}
+{"id": "supported-64", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "unsupported-251", "query": "RAG generates answers before retrieving context.", "expected": "unsupported"}
+{"id": "unsupported-214", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "supported-144", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "unsupported-55", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "unsupported-298", "query": "A verifier labels claims as supported when evidence is missing.", "expected": "unsupported"}
+{"id": "supported-19", "query": "FAISS supports similarity search over dense vectors.", "expected": "supported"}
+{"id": "unsupported-144", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "unsupported-241", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "supported-17", "query": "BM25 is the classic keyword ranking method.", "expected": "supported"}
+{"id": "supported-30", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "supported-157", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "supported-199", "query": "RAG retrieves relevant context first and then generates an answer.", "expected": "supported"}
+{"id": "unsupported-242", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "unsupported-10", "query": "Hybrid retrieval ignores BM25.", "expected": "unsupported"}
+{"id": "unsupported-139", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "unsupported-72", "query": "Hybrid retrieval ignores BM25.", "expected": "unsupported"}
+{"id": "unsupported-208", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "unsupported-198", "query": "Sparse retrieval uses dense vector similarity.", "expected": "unsupported"}
+{"id": "unsupported-132", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "unsupported-114", "query": "BM25 is a dense retrieval method using vectors.", "expected": "unsupported"}
+{"id": "unsupported-138", "query": "A verifier labels claims as supported when evidence is missing.", "expected": "unsupported"}
+{"id": "unsupported-29", "query": "Sparse retrieval uses dense vector similarity.", "expected": "unsupported"}
+{"id": "unsupported-230", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "unsupported-269", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "supported-171", "query": "Hybrid retrieval uses FAISS for dense retrieval and BM25 for sparse retrieval.", "expected": "supported"}
+{"id": "supported-75", "query": "RAG answers are grounded in retrieved context, often with citations.", "expected": "supported"}
+{"id": "supported-211", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "unsupported-247", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "supported-12", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "supported-196", "query": "The diagram shows query -> retrieve (BM25 + FAISS) -> generate -> verify with citations.", "expected": "supported"}
+{"id": "unsupported-297", "query": "Dense retrieval relies on keywords and BM25.", "expected": "unsupported"}
+{"id": "supported-137", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "unsupported-82", "query": "RAG does not use citations.", "expected": "unsupported"}
+{"id": "unsupported-106", "query": "FAISS stores lexical term statistics for documents.", "expected": "unsupported"}
+{"id": "unsupported-268", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "supported-93", "query": "BM25 does not store dense embeddings.", "expected": "supported"}
+{"id": "unsupported-239", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "supported-221", "query": "RAG retrieves relevant context first and then generates an answer.", "expected": "supported"}
+{"id": "supported-188", "query": "RAG retrieves relevant context first and then generates an answer.", "expected": "supported"}
+{"id": "unsupported-201", "query": "FAISS stores lexical term statistics for documents.", "expected": "unsupported"}
+{"id": "supported-73", "query": "A verifier labels claims as supported when evidence directly backs them.", "expected": "supported"}
+{"id": "supported-246", "query": "Hybrid retrieval uses FAISS for dense retrieval and BM25 for sparse retrieval.", "expected": "supported"}
+{"id": "supported-135", "query": "RAG retrieves relevant context first and then generates an answer.", "expected": "supported"}
+{"id": "supported-151", "query": "BM25 is a sparse retrieval method for keyword-based ranking.", "expected": "supported"}
+{"id": "unsupported-16", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "supported-124", "query": "FAISS is not a keyword ranking algorithm.", "expected": "supported"}
+{"id": "unsupported-259", "query": "Dense retrieval relies on keywords and BM25.", "expected": "unsupported"}
+{"id": "supported-232", "query": "Hybrid retrieval uses FAISS for dense retrieval and BM25 for sparse retrieval.", "expected": "supported"}
+{"id": "unsupported-206", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "supported-230", "query": "BM25 is a sparse retrieval method for keyword-based ranking.", "expected": "supported"}
+{"id": "unsupported-169", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "supported-207", "query": "BM25 does not store dense embeddings.", "expected": "supported"}
+{"id": "unsupported-104", "query": "Dense retrieval relies on keywords and BM25.", "expected": "unsupported"}
+{"id": "supported-81", "query": "FAISS supports similarity search over dense vectors.", "expected": "supported"}
+{"id": "supported-50", "query": "FAISS is not a keyword ranking algorithm.", "expected": "supported"}
+{"id": "unsupported-50", "query": "FAISS stores lexical term statistics for documents.", "expected": "unsupported"}
+{"id": "supported-31", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "supported-60", "query": "Hybrid retrieval uses FAISS for dense retrieval and BM25 for sparse retrieval.", "expected": "supported"}
+{"id": "unsupported-237", "query": "BM25 is a dense retrieval method using vectors.", "expected": "unsupported"}
+{"id": "supported-282", "query": "BM25 is the classic keyword ranking method.", "expected": "supported"}
+{"id": "unsupported-64", "query": "Sparse retrieval uses dense vector similarity.", "expected": "unsupported"}
+{"id": "supported-117", "query": "RAG retrieves relevant context first and then generates an answer.", "expected": "supported"}
+{"id": "unsupported-83", "query": "Hybrid retrieval ignores BM25.", "expected": "unsupported"}
+{"id": "supported-252", "query": "A verifier labels claims as supported when evidence directly backs them.", "expected": "supported"}
+{"id": "unsupported-101", "query": "RAG does not use citations.", "expected": "unsupported"}
+{"id": "unsupported-140", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "supported-191", "query": "FAISS supports similarity search over dense vectors.", "expected": "supported"}
+{"id": "unsupported-294", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "supported-89", "query": "RAG answers are grounded in retrieved context, often with citations.", "expected": "supported"}
+{"id": "supported-136", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "unsupported-125", "query": "A verifier labels claims as supported when evidence is missing.", "expected": "unsupported"}
+{"id": "unsupported-134", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "supported-95", "query": "RAG answers are grounded in retrieved context, often with citations.", "expected": "supported"}
+{"id": "supported-149", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "unsupported-96", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "unsupported-77", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "unsupported-217", "query": "BM25 is a dense retrieval method using vectors.", "expected": "unsupported"}
+{"id": "supported-292", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "supported-104", "query": "The diagram shows query -> retrieve (BM25 + FAISS) -> generate -> verify with citations.", "expected": "supported"}
+{"id": "supported-57", "query": "FAISS is not a keyword ranking algorithm.", "expected": "supported"}
+{"id": "unsupported-175", "query": "RAG does not use citations.", "expected": "unsupported"}
+{"id": "unsupported-194", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "supported-5", "query": "RAG retrieves relevant context first and then generates an answer.", "expected": "supported"}
+{"id": "supported-203", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "unsupported-190", "query": "FAISS is a sparse keyword scorer.", "expected": "unsupported"}
+{"id": "unsupported-152", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "unsupported-263", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "unsupported-293", "query": "RAG does not use citations.", "expected": "unsupported"}
+{"id": "supported-122", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "supported-177", "query": "BM25 is a sparse retrieval method for keyword-based ranking.", "expected": "supported"}
+{"id": "unsupported-47", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "supported-285", "query": "FAISS is not a keyword ranking algorithm.", "expected": "supported"}
+{"id": "supported-242", "query": "The diagram shows query -> retrieve (BM25 + FAISS) -> generate -> verify with citations.", "expected": "supported"}
+{"id": "unsupported-159", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "supported-105", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "supported-185", "query": "A verifier labels claims as supported when evidence directly backs them.", "expected": "supported"}
+{"id": "supported-293", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "unsupported-212", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "supported-49", "query": "Hybrid retrieval uses FAISS for dense retrieval and BM25 for sparse retrieval.", "expected": "supported"}
+{"id": "unsupported-129", "query": "Hybrid retrieval ignores BM25.", "expected": "unsupported"}
+{"id": "unsupported-283", "query": "Hybrid retrieval ignores BM25.", "expected": "unsupported"}
+{"id": "unsupported-211", "query": "BM25 is a dense retrieval method using vectors.", "expected": "unsupported"}
+{"id": "unsupported-107", "query": "RAG does not use citations.", "expected": "unsupported"}
+{"id": "supported-247", "query": "RAG retrieves relevant context first and then generates an answer.", "expected": "supported"}
+{"id": "unsupported-28", "query": "RAG does not use citations.", "expected": "unsupported"}
+{"id": "unsupported-80", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "unsupported-117", "query": "A verifier labels claims as supported when evidence is missing.", "expected": "unsupported"}
+{"id": "unsupported-243", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "supported-88", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "supported-67", "query": "BM25 is the classic keyword ranking method.", "expected": "supported"}
+{"id": "unsupported-219", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "unsupported-58", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "unsupported-76", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "supported-262", "query": "BM25 is a sparse retrieval method for keyword-based ranking.", "expected": "supported"}
+{"id": "supported-47", "query": "BM25 is a sparse retrieval method for keyword-based ranking.", "expected": "supported"}
+{"id": "unsupported-299", "query": "FAISS stores lexical term statistics for documents.", "expected": "unsupported"}
+{"id": "unsupported-178", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "unsupported-181", "query": "A verifier labels claims as supported when evidence is missing.", "expected": "unsupported"}
+{"id": "unsupported-38", "query": "Dense retrieval relies on keywords and BM25.", "expected": "unsupported"}
+{"id": "unsupported-275", "query": "Dense retrieval relies on keywords and BM25.", "expected": "unsupported"}
+{"id": "unsupported-149", "query": "A verifier labels claims as supported when evidence is missing.", "expected": "unsupported"}
+{"id": "supported-296", "query": "A verifier labels claims as supported when evidence directly backs them.", "expected": "supported"}
+{"id": "unsupported-130", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "unsupported-174", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "supported-45", "query": "FAISS is not a keyword ranking algorithm.", "expected": "supported"}
+{"id": "unsupported-193", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "supported-166", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "supported-138", "query": "The diagram shows query -> retrieve (BM25 + FAISS) -> generate -> verify with citations.", "expected": "supported"}
+{"id": "unsupported-70", "query": "RAG does not use citations.", "expected": "unsupported"}
+{"id": "unsupported-255", "query": "FAISS stores lexical term statistics for documents.", "expected": "unsupported"}
+{"id": "supported-248", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "supported-139", "query": "A verifier labels claims as supported when evidence directly backs them.", "expected": "supported"}
+{"id": "unsupported-264", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "unsupported-162", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "supported-223", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "unsupported-20", "query": "RAG generates answers before retrieving context.", "expected": "unsupported"}
+{"id": "supported-236", "query": "FAISS supports similarity search over dense vectors.", "expected": "supported"}
+{"id": "supported-186", "query": "BM25 does not store dense embeddings.", "expected": "supported"}
+{"id": "supported-222", "query": "RAG answers are grounded in retrieved context, often with citations.", "expected": "supported"}
+{"id": "unsupported-166", "query": "BM25 is a dense retrieval method using vectors.", "expected": "unsupported"}
+{"id": "supported-251", "query": "The diagram shows query -> retrieve (BM25 + FAISS) -> generate -> verify with citations.", "expected": "supported"}
+{"id": "unsupported-235", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "supported-7", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "supported-175", "query": "BM25 is a sparse retrieval method for keyword-based ranking.", "expected": "supported"}
+{"id": "supported-260", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "unsupported-26", "query": "Sparse retrieval uses dense vector similarity.", "expected": "unsupported"}
+{"id": "supported-190", "query": "RAG answers are grounded in retrieved context, often with citations.", "expected": "supported"}
+{"id": "unsupported-49", "query": "Dense retrieval relies on keywords and BM25.", "expected": "unsupported"}
+{"id": "supported-273", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "supported-178", "query": "Hybrid retrieval uses FAISS for dense retrieval and BM25 for sparse retrieval.", "expected": "supported"}
+{"id": "supported-22", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "supported-290", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "supported-62", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "supported-155", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "supported-53", "query": "BM25 is the classic keyword ranking method.", "expected": "supported"}
+{"id": "unsupported-176", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "supported-39", "query": "FAISS supports similarity search over dense vectors.", "expected": "supported"}
+{"id": "unsupported-197", "query": "RAG generates answers before retrieving context.", "expected": "unsupported"}
+{"id": "supported-204", "query": "RAG retrieves relevant context first and then generates an answer.", "expected": "supported"}
+{"id": "supported-193", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "unsupported-128", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "unsupported-6", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "unsupported-52", "query": "RAG does not use citations.", "expected": "unsupported"}
+{"id": "supported-297", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "supported-56", "query": "RAG answers are grounded in retrieved context, often with citations.", "expected": "supported"}
+{"id": "supported-160", "query": "A verifier labels claims as supported when evidence directly backs them.", "expected": "supported"}
+{"id": "supported-84", "query": "Hybrid retrieval uses FAISS for dense retrieval and BM25 for sparse retrieval.", "expected": "supported"}
+{"id": "unsupported-15", "query": "BM25 is a dense retrieval method using vectors.", "expected": "unsupported"}
+{"id": "supported-86", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "supported-189", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "supported-132", "query": "Hybrid retrieval uses FAISS for dense retrieval and BM25 for sparse retrieval.", "expected": "supported"}
+{"id": "unsupported-189", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "unsupported-260", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "unsupported-258", "query": "FAISS stores lexical term statistics for documents.", "expected": "unsupported"}
+{"id": "supported-59", "query": "RAG retrieves relevant context first and then generates an answer.", "expected": "supported"}
+{"id": "unsupported-300", "query": "RAG generates answers before retrieving context.", "expected": "unsupported"}
+{"id": "supported-65", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "unsupported-236", "query": "Sparse retrieval uses dense vector similarity.", "expected": "unsupported"}
+{"id": "unsupported-102", "query": "Sparse retrieval uses dense vector similarity.", "expected": "unsupported"}
+{"id": "unsupported-282", "query": "RAG does not use citations.", "expected": "unsupported"}
+{"id": "unsupported-86", "query": "Dense retrieval relies on keywords and BM25.", "expected": "unsupported"}
+{"id": "supported-103", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "unsupported-127", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "supported-16", "query": "A verifier labels claims as supported when evidence directly backs them.", "expected": "supported"}
+{"id": "supported-21", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "supported-36", "query": "RAG retrieves relevant context first and then generates an answer.", "expected": "supported"}
+{"id": "supported-115", "query": "BM25 does not store dense embeddings.", "expected": "supported"}
+{"id": "supported-180", "query": "BM25 is the classic keyword ranking method.", "expected": "supported"}
+{"id": "supported-27", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "unsupported-276", "query": "RAG generates answers before retrieving context.", "expected": "unsupported"}
+{"id": "supported-10", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "supported-241", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "unsupported-108", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "supported-130", "query": "RAG answers are grounded in retrieved context, often with citations.", "expected": "supported"}
+{"id": "unsupported-90", "query": "Hybrid retrieval ignores BM25.", "expected": "unsupported"}
+{"id": "supported-143", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "unsupported-65", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "unsupported-115", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "unsupported-148", "query": "A verifier labels claims as supported when evidence is missing.", "expected": "unsupported"}
+{"id": "supported-233", "query": "The diagram shows query -> retrieve (BM25 + FAISS) -> generate -> verify with citations.", "expected": "supported"}
+{"id": "supported-109", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "supported-168", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "unsupported-84", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "supported-134", "query": "BM25 is the classic keyword ranking method.", "expected": "supported"}
+{"id": "unsupported-157", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "supported-94", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "supported-237", "query": "A verifier labels claims as supported when evidence directly backs them.", "expected": "supported"}
+{"id": "supported-70", "query": "RAG retrieves relevant context first and then generates an answer.", "expected": "supported"}
+{"id": "supported-220", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "unsupported-238", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "supported-43", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "unsupported-143", "query": "Dense retrieval relies on keywords and BM25.", "expected": "unsupported"}
+{"id": "unsupported-210", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "supported-289", "query": "BM25 does not store dense embeddings.", "expected": "supported"}
+{"id": "unsupported-4", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "unsupported-246", "query": "BM25 is a dense retrieval method using vectors.", "expected": "unsupported"}
+{"id": "supported-14", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "unsupported-291", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "unsupported-19", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "supported-66", "query": "The diagram shows query -> retrieve (BM25 + FAISS) -> generate -> verify with citations.", "expected": "supported"}
+{"id": "supported-240", "query": "FAISS supports similarity search over dense vectors.", "expected": "supported"}
+{"id": "supported-85", "query": "RAG retrieves relevant context first and then generates an answer.", "expected": "supported"}
+{"id": "supported-208", "query": "FAISS supports similarity search over dense vectors.", "expected": "supported"}
+{"id": "unsupported-48", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "unsupported-43", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "supported-173", "query": "RAG answers are grounded in retrieved context, often with citations.", "expected": "supported"}
+{"id": "unsupported-79", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "supported-15", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "unsupported-121", "query": "FAISS stores lexical term statistics for documents.", "expected": "unsupported"}
+{"id": "supported-224", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "unsupported-161", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "unsupported-74", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "supported-250", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "unsupported-163", "query": "FAISS stores lexical term statistics for documents.", "expected": "unsupported"}
+{"id": "unsupported-227", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "supported-280", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "supported-276", "query": "Hybrid retrieval uses FAISS for dense retrieval and BM25 for sparse retrieval.", "expected": "supported"}
+{"id": "supported-215", "query": "BM25 is a sparse retrieval method for keyword-based ranking.", "expected": "supported"}
+{"id": "unsupported-229", "query": "FAISS is a sparse keyword scorer.", "expected": "unsupported"}
+{"id": "supported-153", "query": "BM25 is a sparse retrieval method for keyword-based ranking.", "expected": "supported"}
+{"id": "supported-181", "query": "A verifier labels claims as supported when evidence directly backs them.", "expected": "supported"}
+{"id": "supported-4", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "supported-245", "query": "RAG answers are grounded in retrieved context, often with citations.", "expected": "supported"}
+{"id": "unsupported-252", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "unsupported-183", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "supported-11", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "unsupported-160", "query": "BM25 is a dense retrieval method using vectors.", "expected": "unsupported"}
+{"id": "supported-300", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "supported-200", "query": "Hybrid retrieval uses FAISS for dense retrieval and BM25 for sparse retrieval.", "expected": "supported"}
+{"id": "unsupported-270", "query": "Hybrid retrieval ignores BM25.", "expected": "unsupported"}
+{"id": "supported-106", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "supported-32", "query": "BM25 is the classic keyword ranking method.", "expected": "supported"}
+{"id": "unsupported-98", "query": "BM25 is a dense retrieval method using vectors.", "expected": "unsupported"}
+{"id": "supported-239", "query": "BM25 does not store dense embeddings.", "expected": "supported"}
+{"id": "supported-278", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "supported-170", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "supported-209", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "unsupported-186", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "supported-33", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "supported-110", "query": "BM25 is a sparse retrieval method for keyword-based ranking.", "expected": "supported"}
+{"id": "unsupported-62", "query": "RAG generates answers before retrieving context.", "expected": "unsupported"}
+{"id": "supported-79", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "unsupported-56", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "unsupported-179", "query": "Sparse retrieval uses dense vector similarity.", "expected": "unsupported"}
+{"id": "unsupported-254", "query": "RAG generates answers before retrieving context.", "expected": "unsupported"}
+{"id": "supported-78", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "supported-71", "query": "RAG answers are grounded in retrieved context, often with citations.", "expected": "supported"}
+{"id": "supported-42", "query": "BM25 is a sparse retrieval method for keyword-based ranking.", "expected": "supported"}
+{"id": "supported-277", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "unsupported-290", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "unsupported-207", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "supported-140", "query": "The diagram shows query -> retrieve (BM25 + FAISS) -> generate -> verify with citations.", "expected": "supported"}
+{"id": "unsupported-202", "query": "BM25 is a dense retrieval method using vectors.", "expected": "unsupported"}
+{"id": "supported-147", "query": "The diagram shows query -> retrieve (BM25 + FAISS) -> generate -> verify with citations.", "expected": "supported"}
+{"id": "unsupported-66", "query": "Hybrid retrieval ignores BM25.", "expected": "unsupported"}
+{"id": "unsupported-261", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "supported-226", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "supported-141", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "supported-123", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "unsupported-21", "query": "FAISS stores lexical term statistics for documents.", "expected": "unsupported"}
+{"id": "supported-249", "query": "FAISS supports similarity search over dense vectors.", "expected": "supported"}
+{"id": "supported-267", "query": "BM25 is a sparse retrieval method for keyword-based ranking.", "expected": "supported"}
+{"id": "unsupported-165", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "unsupported-93", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "supported-142", "query": "FAISS is not a keyword ranking algorithm.", "expected": "supported"}
+{"id": "unsupported-27", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "supported-127", "query": "Hybrid retrieval uses FAISS for dense retrieval and BM25 for sparse retrieval.", "expected": "supported"}
+{"id": "unsupported-170", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "supported-133", "query": "FAISS is not a keyword ranking algorithm.", "expected": "supported"}
+{"id": "supported-231", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "unsupported-192", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "unsupported-81", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "supported-82", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "unsupported-279", "query": "FAISS is a sparse keyword scorer.", "expected": "unsupported"}
+{"id": "supported-281", "query": "RAG retrieves relevant context first and then generates an answer.", "expected": "supported"}
+{"id": "unsupported-126", "query": "Sparse retrieval uses dense vector similarity.", "expected": "unsupported"}
+{"id": "unsupported-216", "query": "RAG generates answers before retrieving context.", "expected": "unsupported"}
+{"id": "supported-259", "query": "Hybrid retrieval uses FAISS for dense retrieval and BM25 for sparse retrieval.", "expected": "supported"}
+{"id": "unsupported-69", "query": "Sparse retrieval uses dense vector similarity.", "expected": "unsupported"}
+{"id": "unsupported-118", "query": "FAISS stores lexical term statistics for documents.", "expected": "unsupported"}
+{"id": "unsupported-14", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "supported-227", "query": "BM25 is a sparse retrieval method for keyword-based ranking.", "expected": "supported"}
+{"id": "unsupported-87", "query": "Sparse retrieval uses dense vector similarity.", "expected": "unsupported"}
+{"id": "supported-163", "query": "A verifier labels claims as supported when evidence directly backs them.", "expected": "supported"}
+{"id": "unsupported-5", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "supported-287", "query": "The diagram shows query -> retrieve (BM25 + FAISS) -> generate -> verify with citations.", "expected": "supported"}
+{"id": "unsupported-262", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "unsupported-42", "query": "FAISS stores lexical term statistics for documents.", "expected": "unsupported"}
+{"id": "unsupported-171", "query": "BM25 is a dense retrieval method using vectors.", "expected": "unsupported"}
+{"id": "unsupported-111", "query": "Sparse retrieval uses dense vector similarity.", "expected": "unsupported"}
+{"id": "supported-69", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "unsupported-187", "query": "BM25 is a dense retrieval method using vectors.", "expected": "unsupported"}
+{"id": "supported-63", "query": "BM25 does not store dense embeddings.", "expected": "supported"}
+{"id": "unsupported-135", "query": "Hybrid retrieval ignores BM25.", "expected": "unsupported"}
+{"id": "unsupported-240", "query": "Hybrid retrieval ignores BM25.", "expected": "unsupported"}
+{"id": "unsupported-272", "query": "A verifier labels claims as supported when evidence is missing.", "expected": "unsupported"}
+{"id": "unsupported-296", "query": "Hybrid retrieval ignores BM25.", "expected": "unsupported"}
+{"id": "supported-238", "query": "FAISS is not a keyword ranking algorithm.", "expected": "supported"}
+{"id": "supported-266", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "unsupported-180", "query": "A verifier labels claims as supported when evidence is missing.", "expected": "unsupported"}
+{"id": "unsupported-112", "query": "RAG generates answers before retrieving context.", "expected": "unsupported"}
+{"id": "supported-91", "query": "BM25 is the classic keyword ranking method.", "expected": "supported"}
+{"id": "supported-113", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "supported-218", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "unsupported-99", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "supported-55", "query": "FAISS is not a keyword ranking algorithm.", "expected": "supported"}
+{"id": "unsupported-215", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "unsupported-253", "query": "BM25 is a dense retrieval method using vectors.", "expected": "unsupported"}
+{"id": "unsupported-221", "query": "FAISS stores lexical term statistics for documents.", "expected": "unsupported"}
+{"id": "unsupported-203", "query": "A verifier labels claims as supported when evidence is missing.", "expected": "unsupported"}
+{"id": "unsupported-158", "query": "FAISS is a sparse keyword scorer.", "expected": "unsupported"}
+{"id": "supported-3", "query": "FAISS supports similarity search over dense vectors.", "expected": "supported"}
+{"id": "unsupported-53", "query": "Hybrid retrieval ignores BM25.", "expected": "unsupported"}
+{"id": "unsupported-36", "query": "Dense retrieval relies on keywords and BM25.", "expected": "unsupported"}
+{"id": "unsupported-196", "query": "BM25 is a dense retrieval method using vectors.", "expected": "unsupported"}
+{"id": "supported-125", "query": "RAG answers are grounded in retrieved context, often with citations.", "expected": "supported"}
+{"id": "unsupported-284", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "supported-254", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "unsupported-231", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "unsupported-57", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "unsupported-68", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "supported-100", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "supported-295", "query": "FAISS supports similarity search over dense vectors.", "expected": "supported"}
+{"id": "unsupported-23", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "unsupported-154", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "supported-213", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "unsupported-280", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "supported-38", "query": "RAG answers are grounded in retrieved context, often with citations.", "expected": "supported"}
+{"id": "unsupported-94", "query": "RAG generates answers before retrieving context.", "expected": "unsupported"}
+{"id": "unsupported-136", "query": "RAG generates answers before retrieving context.", "expected": "unsupported"}
+{"id": "unsupported-281", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "supported-244", "query": "The diagram shows query -> retrieve (BM25 + FAISS) -> generate -> verify with citations.", "expected": "supported"}
+{"id": "supported-126", "query": "Hybrid retrieval uses FAISS for dense retrieval and BM25 for sparse retrieval.", "expected": "supported"}
+{"id": "supported-24", "query": "A verifier labels claims as supported when evidence directly backs them.", "expected": "supported"}
+{"id": "supported-13", "query": "The diagram shows query -> retrieve (BM25 + FAISS) -> generate -> verify with citations.", "expected": "supported"}
+{"id": "supported-76", "query": "FAISS is not a keyword ranking algorithm.", "expected": "supported"}
+{"id": "supported-102", "query": "RAG retrieves relevant context first and then generates an answer.", "expected": "supported"}
+{"id": "unsupported-234", "query": "BM25 is a dense retrieval method using vectors.", "expected": "unsupported"}
+{"id": "supported-116", "query": "BM25 is the classic keyword ranking method.", "expected": "supported"}
+{"id": "supported-159", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "unsupported-45", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "supported-121", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "unsupported-85", "query": "RAG generates answers before retrieving context.", "expected": "unsupported"}
+{"id": "unsupported-188", "query": "RAG generates answers before retrieving context.", "expected": "unsupported"}
+{"id": "unsupported-120", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "supported-48", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "supported-172", "query": "FAISS supports similarity search over dense vectors.", "expected": "supported"}
+{"id": "unsupported-18", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "unsupported-25", "query": "A verifier labels claims as supported when evidence is missing.", "expected": "unsupported"}
+{"id": "unsupported-267", "query": "RAG generates answers before retrieving context.", "expected": "unsupported"}
+{"id": "supported-264", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "supported-291", "query": "Hybrid retrieval combines dense retrieval with sparse retrieval.", "expected": "supported"}
+{"id": "supported-87", "query": "RAG answers are grounded in retrieved context, often with citations.", "expected": "supported"}
+{"id": "supported-174", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "unsupported-185", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "supported-219", "query": "RAG answers are grounded in retrieved context, often with citations.", "expected": "supported"}
+{"id": "unsupported-218", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "unsupported-153", "query": "Dense retrieval relies on keywords and BM25.", "expected": "unsupported"}
+{"id": "unsupported-177", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "unsupported-30", "query": "RAG does not use citations.", "expected": "unsupported"}
+{"id": "unsupported-141", "query": "Hybrid retrieval ignores BM25.", "expected": "unsupported"}
+{"id": "supported-216", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "supported-294", "query": "FAISS is not a keyword ranking algorithm.", "expected": "supported"}
+{"id": "unsupported-12", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "supported-1", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "unsupported-116", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "unsupported-9", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "supported-179", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "unsupported-89", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "unsupported-131", "query": "RAG generates answers before retrieving context.", "expected": "unsupported"}
+{"id": "supported-197", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "supported-131", "query": "FAISS supports similarity search over dense vectors.", "expected": "supported"}
+{"id": "unsupported-3", "query": "FAISS stores lexical term statistics for documents.", "expected": "unsupported"}
+{"id": "unsupported-113", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "unsupported-35", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "unsupported-119", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "unsupported-17", "query": "Sparse retrieval uses dense vector similarity.", "expected": "unsupported"}
+{"id": "unsupported-220", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "unsupported-8", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "supported-128", "query": "FAISS supports similarity search over dense vectors.", "expected": "supported"}
+{"id": "unsupported-257", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "unsupported-39", "query": "Dense retrieval relies on keywords and BM25.", "expected": "unsupported"}
+{"id": "unsupported-273", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "unsupported-142", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "unsupported-73", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "supported-202", "query": "FAISS is not a keyword ranking algorithm.", "expected": "supported"}
+{"id": "unsupported-233", "query": "Hybrid retrieval ignores BM25.", "expected": "unsupported"}
+{"id": "supported-2", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "unsupported-256", "query": "Sparse retrieval uses dense vector similarity.", "expected": "unsupported"}
+{"id": "supported-46", "query": "RAG retrieves relevant context first and then generates an answer.", "expected": "supported"}
+{"id": "supported-261", "query": "Hybrid retrieval uses FAISS for dense retrieval and BM25 for sparse retrieval.", "expected": "supported"}
+{"id": "supported-195", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "unsupported-95", "query": "Dense retrieval relies on keywords and BM25.", "expected": "unsupported"}
+{"id": "unsupported-265", "query": "FAISS stores lexical term statistics for documents.", "expected": "unsupported"}
+{"id": "unsupported-224", "query": "BM25 is a dense retrieval method using vectors.", "expected": "unsupported"}
+{"id": "unsupported-147", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "unsupported-22", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "unsupported-54", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "unsupported-145", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "supported-112", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "unsupported-287", "query": "Hybrid retrieval combines only keyword ranking methods.", "expected": "unsupported"}
+{"id": "supported-272", "query": "BM25 is the classic keyword ranking method.", "expected": "supported"}
+{"id": "supported-183", "query": "BM25 is the classic keyword ranking method.", "expected": "supported"}
+{"id": "supported-268", "query": "RAG retrieves relevant context first and then generates an answer.", "expected": "supported"}
+{"id": "supported-119", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "supported-29", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "unsupported-40", "query": "Sparse retrieval uses dense vector similarity.", "expected": "unsupported"}
+{"id": "unsupported-250", "query": "RAG does not use citations.", "expected": "unsupported"}
+{"id": "unsupported-110", "query": "FAISS stores lexical term statistics for documents.", "expected": "unsupported"}
+{"id": "unsupported-222", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "unsupported-60", "query": "RAG generates answers before retrieving context.", "expected": "unsupported"}
+{"id": "unsupported-274", "query": "RAG generates answers before retrieving context.", "expected": "unsupported"}
+{"id": "supported-72", "query": "Dense retrieval uses vectors and similarity.", "expected": "supported"}
+{"id": "supported-286", "query": "BM25 does not store dense embeddings.", "expected": "supported"}
+{"id": "unsupported-37", "query": "FAISS is a sparse keyword scorer.", "expected": "unsupported"}
+{"id": "unsupported-109", "query": "BM25 is deprecated.", "expected": "unsupported"}
+{"id": "supported-198", "query": "Hybrid retrieval uses FAISS for dense retrieval and BM25 for sparse retrieval.", "expected": "supported"}
+{"id": "supported-25", "query": "FAISS supports similarity search over dense vectors.", "expected": "supported"}
+{"id": "supported-229", "query": "Hybrid retrieval uses FAISS for dense retrieval and BM25 for sparse retrieval.", "expected": "supported"}
+{"id": "supported-234", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "unsupported-13", "query": "The diagram shows query -> generate -> retrieve -> verify.", "expected": "unsupported"}
+{"id": "unsupported-59", "query": "Sparse retrieval uses dense vector similarity.", "expected": "unsupported"}
+{"id": "unsupported-172", "query": "Sparse retrieval uses dense vector similarity.", "expected": "unsupported"}
+{"id": "supported-205", "query": "BM25 is the classic keyword ranking method.", "expected": "supported"}
+{"id": "supported-228", "query": "FAISS is not a keyword ranking algorithm.", "expected": "supported"}
+{"id": "unsupported-182", "query": "BM25 stores dense embeddings in a vector database.", "expected": "unsupported"}
+{"id": "supported-40", "query": "Hybrid retrieval uses FAISS for dense retrieval and BM25 for sparse retrieval.", "expected": "supported"}
+{"id": "unsupported-92", "query": "BM25 is used for nearest neighbor search.", "expected": "unsupported"}
+{"id": "supported-111", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "supported-164", "query": "BM25 is the classic keyword ranking method.", "expected": "supported"}
+{"id": "supported-274", "query": "The diagram shows query -> retrieve (BM25 + FAISS) -> generate -> verify with citations.", "expected": "supported"}
+{"id": "supported-255", "query": "Sparse retrieval uses keywords and BM25 scoring.", "expected": "supported"}
+{"id": "unsupported-122", "query": "FAISS is a sparse keyword scorer.", "expected": "unsupported"}
+{"id": "unsupported-41", "query": "Hybrid retrieval ignores BM25.", "expected": "unsupported"}
+{"id": "supported-184", "query": "BM25 is the classic keyword ranking method.", "expected": "supported"}
+{"id": "supported-26", "query": "BM25 ranks documents using lexical term statistics.", "expected": "supported"}
+{"id": "unsupported-123", "query": "FAISS is a keyword ranking algorithm.", "expected": "unsupported"}
+{"id": "supported-182", "query": "FAISS is commonly used for nearest neighbor retrieval.", "expected": "supported"}
+{"id": "supported-167", "query": "BM25 is a sparse retrieval method for keyword-based ranking.", "expected": "supported"}
+{"id": "supported-243", "query": "FAISS is not a keyword ranking algorithm.", "expected": "supported"}

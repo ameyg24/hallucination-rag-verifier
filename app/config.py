@@ -1,0 +1,19 @@
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parents[1]
+DATA_DIR = BASE_DIR / "data"
+# DOCS_DIR = DATA_DIR / "docs"
+# IMAGES_DIR = DATA_DIR / "images"
+INDEX_DIR = DATA_DIR / "index"
+
+CHUNK_SIZE = 450
+CHUNK_OVERLAP = 80
+
+TOP_K = 3
+FAISS_WEIGHT = 0.2
+BM25_WEIGHT = 0.8
+
+VERIFIER_SUPPORTED_MIN_OVERLAP = 6
+VERIFIER_UNCERTAIN_MIN_OVERLAP = 2
+
+OPENAI_MODEL = "gpt-4.1"
