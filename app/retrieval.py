@@ -90,7 +90,7 @@ class HybridRetriever:
             return []
         bm_scores = self.bm25.get_scores(bm_query_tokens).tolist()
         if not any(scr > 0 for scr in bm_scores):
-            return []
+            bm_scores = [0.0] * len(self.texts)
 
         def norm(scores):
             smin, smax = min(scores), max(scores)
