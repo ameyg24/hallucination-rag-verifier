@@ -87,6 +87,7 @@ def evaluate_local(
     for case in cases:
         cid = case.get("id", "")
         query = case.get("query", "")
+        claim = case.get("claim", query)
         expected = case.get("expected", "supported")
         if expected not in VALID_EXPECTED_LABELS:
             raise RuntimeError(
@@ -103,7 +104,7 @@ def evaluate_local(
             w_faiss=w_faiss,
             w_bm25=w_bm25,
         )
-        draft_answer = query
+        draft_answer = claim
         if use_llm:
             draft_answer = generate_answer_with_evidence(
                 query=query,
@@ -136,10 +137,11 @@ def evaluate_local(
                 correct_supported += 1
 
         results_rows.append(
-            {
-                "id": cid,
-                "query": query,
-                "expected": expected,
+                {
+                    "id": cid,
+                    "query": query,
+                    "claim": claim,
+                    "expected": expected,
                 "verdict": verdict,
                 "evidence_count": evidence_count,
             }
@@ -237,6 +239,7 @@ def main() -> None:
         for case in cases:
             cid = case.get("id", "")
             query = case.get("query", "")
+            claim = case.get("claim", query)
             expected = case.get("expected", "supported")
             if expected not in VALID_EXPECTED_LABELS:
                 print(
@@ -249,7 +252,7 @@ def main() -> None:
                 continue
 
             try:
-                resp = requests.post(f"{BASE_URL}/query", json={"query": query}, timeout=30)
+                resp = requests.post(f"{BASE_URL}/query", json={"query": query, "claim": claim}, timeout=30)
                 status = resp.status_code
                 body_txt = resp.text
                 resp.raise_for_status()
@@ -285,6 +288,7 @@ def main() -> None:
                 {
                     "id": cid,
                     "query": query,
+                    "claim": claim,
                     "expected": expected,
                     "verdict": verdict,
                     "evidence_count": evidence_count,
@@ -303,7 +307,7 @@ def main() -> None:
 
     args.out_csv.parent.mkdir(parents=True, exist_ok=True)
     with args.out_csv.open("w", encoding="utf-8", newline="") as fh:
-        writer = csv.DictWriter(fh, fieldnames=["id", "query", "expected", "verdict", "evidence_count"])
+        writer = csv.DictWriter(fh, fieldnames=["id", "query", "claim", "expected", "verdict", "evidence_count"])
         writer.writeheader()
         writer.writerows(results_rows)
 

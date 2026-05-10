@@ -1,16 +1,22 @@
+import argparse
 import csv
 import json
 from pathlib import Path
 from typing import Dict, Any
 from datetime import datetime, timezone
 
-IN_CSV = Path("results/eval_results.csv")
-OUT_JSON = Path("results/eval_summary.json")
+DEFAULT_IN_CSV = Path("results/eval_results.csv")
+DEFAULT_OUT_JSON = Path("results/eval_summary.json")
 
 
 def main() -> None:
-    if not IN_CSV.exists():
-        raise SystemExit(f"Missing {IN_CSV}. Run scripts/run_eval.py first.")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--in-csv", type=Path, default=DEFAULT_IN_CSV)
+    parser.add_argument("--out-json", type=Path, default=DEFAULT_OUT_JSON)
+    args = parser.parse_args()
+
+    if not args.in_csv.exists():
+        raise SystemExit(f"Missing {args.in_csv}. Run scripts/run_eval.py first.")
 
     total = 0
     expected_unsupported = 0
@@ -21,7 +27,7 @@ def main() -> None:
 
     covered = 0
 
-    with IN_CSV.open("r", encoding="utf-8", newline="") as fh:
+    with args.in_csv.open("r", encoding="utf-8", newline="") as fh:
         reader = csv.DictReader(fh)
         for row in reader:
             total += 1
@@ -53,9 +59,9 @@ def main() -> None:
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
     }
 
-    OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
-    OUT_JSON.write_text(json.dumps(report, indent=2), encoding="utf-8")
-    print("Wrote", OUT_JSON)
+    args.out_json.parent.mkdir(parents=True, exist_ok=True)
+    args.out_json.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    print("Wrote", args.out_json)
 
 
 if __name__ == "__main__":

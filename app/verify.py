@@ -23,6 +23,14 @@ def _overlap(left_txt: str, right_txt: str) -> int:
     return len(left_tokens.intersection(right_tokens))
 
 
+def _contains_normalized_phrase(needle: str, haystack: str) -> bool:
+    needle_norm = re.sub(r"[^a-z0-9\s]", " ", _norm(needle))
+    haystack_norm = re.sub(r"[^a-z0-9\s]", " ", _norm(haystack))
+    needle_norm = re.sub(r"\s+", " ", needle_norm).strip()
+    haystack_norm = re.sub(r"\s+", " ", haystack_norm).strip()
+    return bool(needle_norm) and needle_norm in haystack_norm
+
+
 def _split_claims(text: str, max_claims: int = 3) -> List[str]:
     parts = [part.strip() for part in re.split(r"[.;\n]+", text) if part.strip()]
     return parts[:max_claims] if parts else []
@@ -129,11 +137,19 @@ def verify_with_claims(
         scored.sort(key=lambda item: item[0], reverse=True)
         top = scored[:max_evidence_per_claim]
         best_score, best_idx, best_ev = (top[0] if top else (0, -1, ""))
+        exact_match_idx = next(
+            (
+                idx
+                for _, idx, ev_text in top
+                if ev_text and _contains_normalized_phrase(claim, ev_text)
+            ),
+            -1,
+        )
 
-        # Default decision by lexical overlap
-        if best_score >= supported_min_overlap:
+        # Claims need exact evidence containment
+        if exact_match_idx >= 0:
             verdict = "supported"
-            citations = [evidence[best_idx].get("source_id", "")] if best_idx >= 0 else []
+            citations = [evidence[exact_match_idx].get("source_id", "")]
         elif best_score >= uncertain_min_overlap:
             verdict = "uncertain"
             citations = [evidence[best_idx].get("source_id", "")] if best_idx >= 0 else []
