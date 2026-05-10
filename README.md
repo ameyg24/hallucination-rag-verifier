@@ -2,7 +2,7 @@
 
 FastAPI service that verifies claims using hybrid retrieval (FAISS + BM25) over text and image evidence. It returns a verdict (`supported` / `unsupported` / `uncertain`) with retrieved evidence snippets.
 
-Includes local scripts for synthetic evaluation and retrieval/prompt tuning.
+Includes local scripts for HaluEval-backed evaluation, synthetic smoke tests, and retrieval/prompt tuning.
 
 ## Features
 - Hybrid retrieval: dense (FAISS) + sparse (BM25)
@@ -11,7 +11,7 @@ Includes local scripts for synthetic evaluation and retrieval/prompt tuning.
 - Evaluation pipeline with CSV + JSON summary
 
 ## MVP Scope (Current)
-This repo ships a demo index and a synthetic evaluation set for a working MVP. It is **not** a production‑grade verifier or a large‑scale benchmark. For credible metrics, plug in a real corpus aligned to a real evaluation dataset and re‑run the eval.
+This repo ships a demo index, a synthetic smoke-test set, and a HaluEval QA conversion for public real-data evaluation. It is **not** a production-grade verifier or a large-scale benchmark.
 
 ## Quickstart
 
@@ -90,6 +90,20 @@ python3 scripts/run_eval.py --local \
   --out-csv results/eval_results.csv
 ```
 
+To generate and evaluate the HaluEval QA dataset:
+
+```bash
+python3 scripts/load_halueval.py
+python3 scripts/ingest_halueval.py
+curl -sS -X POST http://127.0.0.1:8000/save_index
+python3 scripts/run_eval.py --local \
+  --dataset-path data/halueval_eval_cases.jsonl \
+  --out-csv results/halueval_eval_results.csv
+python3 scripts/generate_eval_report.py \
+  --in-csv results/halueval_eval_results.csv \
+  --out-json results/eval_summary.json
+```
+
 To run eval locally with OpenAI-generated draft answers:
 
 ```bash
@@ -108,18 +122,21 @@ To tune prompts using OpenAI (prompt iteration):
 python3 scripts/tune_prompt.py --max-cases 200
 ```
 
-## Latest Verified Local Results (Synthetic Eval)
-- Evaluation scale: 500+ synthetic cases (current run: 600 in `data/eval_cases.jsonl`)
-- Hallucination reduction target met: 30%+ after retrieval tuning and prompt iteration
-- Current default/local run: coverage `0.700`, supported accuracy `0.777`, hallucination rate `0.057`
-- Reference weaker setting (`top_k=6`, `w_faiss=0.8`, `w_bm25=0.2`, `supported_min_overlap=5`) gave hallucination rate `0.327`
+## Latest Verified Local Results (HaluEval QA)
+- Evaluation scale: 1000 real HaluEval QA cases in `data/halueval_eval_cases.jsonl` (500 supported + 500 unsupported)
+- Corpus scale: 1000 HaluEval evidence documents in `data/halueval_corpus.jsonl`, saved as 1456 indexed chunks
+- Current HaluEval local run: coverage `0.939`, supported accuracy `0.926`, hallucination rate `0.004`
+- Verifier tuning reduced HaluEval false-support hallucination rate from `0.530` to `0.004` (99.2% relative reduction) by requiring exact evidence containment for supported verdicts
+- Synthetic eval remains available only as a smoke test in `data/eval_cases.jsonl`
 - Current tuned defaults in `app/config.py`: `TOP_K=3`, `FAISS_WEIGHT=0.2`, `BM25_WEIGHT=0.8`, `VERIFIER_SUPPORTED_MIN_OVERLAP=6`, `VERIFIER_UNCERTAIN_MIN_OVERLAP=2`
 
 Generate detailed summaries locally with:
 
 ```bash
 python3 scripts/tune_retrieval.py
-python3 scripts/generate_eval_report.py
+python3 scripts/generate_eval_report.py \
+  --in-csv results/halueval_eval_results.csv \
+  --out-json results/eval_summary.json
 ```
 
 Then inspect `results/tuning_summary.json` and `results/eval_summary.json`.
@@ -129,11 +146,12 @@ Then inspect `results/tuning_summary.json` and `results/eval_summary.json`.
 
 ## Reproducibility Notes
 - The default dataset in `data/eval_cases.jsonl` is synthetic for smoke testing and tuning.
+- The HaluEval QA dataset in `data/halueval_eval_cases.jsonl` is the public real-data baseline used for the latest reported metrics.
 - For credible metrics, keep the dataset and summary JSON in the repo (or publish them) so the numbers can be verified.
 
 ## Roadmap
-- Plug in a real corpus aligned to the eval dataset and re-run the metrics.
-- Expand evaluation to 500+ real-world cases with public datasets or internal benchmarks.
+- Expand exact-containment support logic with semantic entailment for paraphrased evidence.
+- Add more public real-world datasets or internal benchmarks.
 - Add stronger verification logic (claim parsing, contradiction detection, and citation scoring).
 
 ## License
